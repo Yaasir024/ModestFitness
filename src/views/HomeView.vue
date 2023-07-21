@@ -16,13 +16,14 @@ import Header from '@/components/navigations/Header.vue';
     </div>
     <div class="px-4 sm:px-6 "></div>
 
-    <section  class="bg-black lg:flex cursor-light">
+    <section class="bg-black lg:flex cursor-light">
       <div class="pt-[48px] px-[20px] xs:px-[45px] sm:px-[64px] pb-[42px] w-full">
         <h2
           class="text-[56px] 3xs:text-[64px] leading-[65px] tracking-[0.02em] max-w-[225px] 3xs:max-w-[250px] xs:max-w-full font-medium font-manuka text-white">
           Subscribe to our newsletter</h2>
         <div class="mt-[24px] w-full bg-white p-1.5 xs:p-2">
-          <form class="flex"><input type="text" placeholder="Email address"
+          <form class="flex">
+            <input type="text" placeholder="Email address"
               class="w-full px-[24px] text-[20px] xs:text-[24px] leading-[26px] xs:leading-[31px] bg-transparent border-none outline-none xs:font-medium text-black"><button
               type="submit"
               class="text-[20px] xs:text-[24px] leading-[26px] xs:leading-[31px] tracking-[-0.01em] px-[16px] xs:px-[24px] py-[10px] xs:py-[18px] bg-black flex items-center text-white"><span
@@ -34,7 +35,7 @@ import Header from '@/components/navigations/Header.vue';
         </div>
         <p class="mt-[20px] text-base leading-[21px] tracking-[0.01em] font-bold text-[#ad371d]">Please include an @ in
           the email address</p>
-      </div><img src="/assets/newsletter-pattern-mobile-bcc63008.svg" alt="" class="block xs:hidden mt-[45px] w-full">
+      </div>
     </section>
   </main>
 </template>
@@ -49,4 +50,5 @@ import Header from '@/components/navigations/Header.vue';
   mix-blend-mode: luminosity; */
   /* filter: brightness(40%); */
   /* backgroun */
-}</style>
+}
+</style>
