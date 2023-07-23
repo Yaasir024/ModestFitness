@@ -1,6 +1,6 @@
 <template>
-    <div class="hero px-4 sm:px-6 h-[calc(100dvh-64px)] relative">
-        <div class="text-white pt-12 px-[24px] flex flex-col items-center justify-center">
+    <div class="hero px-4 sm:px-6 h-[calc(100dvh-64px)] relative flex items-center justify-center">
+        <div class="text-white px-[24px] flex flex-col items-center justify-center">
             <h1
                 class="text-[#fdb705] text-[52px] sm:text-[68px] md:text-[96px] leading-[48px] sm:leading-[62px] md:leading-[92px] font-semibold font-pp">
                 Modest Fitness</h1>

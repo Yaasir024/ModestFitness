@@ -57,13 +57,13 @@ useClickOutside(mobileNav, () => {
                     </li>
                 </ul>
             </div>
-            <div class="hidden md:block">
+            <div class="hidden md:block" v-if="false">
                 <RouterLink to="/">
                     <button
                         class="px-[12px] py-[10px] rounded-[40px] text-white text-[16px] leading-[19px] font-bold bg-main">Register</button>
                 </RouterLink>
             </div>
-            <div class="relative" ref="mobileNav">
+            <div class="block md:hidden relative" ref="mobileNav">
                 <button class="flex items-center" @click="showMobileNav = !showMobileNav">
                     <svg height="24" width="24" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
                         stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -99,8 +99,11 @@ useClickOutside(mobileNav, () => {
                                 </ul>
                             </div>
                             <div class="mt-auto px-[24px] pb-[40px]">
-                                <button
-                                    class="px-[12px] py-[10px] rounded-md text-[16px] leading-[19px] font-bold bg-main w-full">Register</button>
+                                <p class="text-sm text-black/60 max-w-[380px] mt-2">
+                                    PHONE: +234 (0) 8060411288
+                                </p>
+                                <!-- <button
+                                    class="px-[12px] py-[10px] rounded-md text-[16px] leading-[19px] font-bold bg-main w-full">Register</button> -->
                             </div>
                         </div>
                     </div>
