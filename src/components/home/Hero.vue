@@ -1,11 +1,11 @@
 <template>
-    <div class="hero px-4 sm:px-6 h-[100dvh] relative">
+    <div class="hero px-4 sm:px-6 h-[calc(100dvh-64px)] relative">
         <div class="text-white pt-12 px-[24px] flex flex-col items-center justify-center">
             <h1
                 class="text-[#fdb705] text-[52px] sm:text-[68px] md:text-[96px] leading-[48px] sm:leading-[62px] md:leading-[92px] font-semibold font-pp">
                 Modest Fitness</h1>
-            <p class="mt-[12px] text-[18px] sm:text-[24px] leading-[22px] sm:leading-[36px] text-of-dark/60">
-                Create unforgettable travel experiences all the way there and back, with ease. </p>
+            <p class="long-text mt-[12px] text-[18px] sm:text-[30px] leading-[22px] sm:leading-[36px] text-white font-semibold uppercase">
+                Stronger and Healthier than ever </p>
         </div>
         <div id="hero-marquee"
             class="absolute bottom-0 left-0 right-0 text-xl xs:text-[24px] leading-[26px] sm:leading-[31px] tracing-[0.02em] font-bold uppercase bg-gray-300 flex z-10">
@@ -42,8 +42,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="min-h-[calc(100vh-100px)] relative">
-    </div> -->
 </template>
 
 
@@ -60,7 +58,9 @@
     /* filter: brightness(40%); */
     /* backgroun */
 }
-
+.hero .long-text {
+    text-shadow: 1px 1px 5px #000;
+}
 .marquee {
     display: flex;
     overflow: hidden;

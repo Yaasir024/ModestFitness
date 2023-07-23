@@ -1,1 +1,16 @@
 @import './base.css';
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Nav Animation */
+  .nav-enter-active,
+  .nav-leave-active {
+    transition: all 0.4s ease;
+  }
+  
+  .nav-enter-from,
+  .nav-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
