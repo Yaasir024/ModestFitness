@@ -9,7 +9,9 @@ const showMobileNav = ref(false)
 useClickOutside(mobileNav, () => {
     showMobileNav.value = false;
 });
-
+const closeOnRoute = () => {
+    showMobileNav.value = false;
+}
 </script>
 
 <template>
@@ -21,13 +23,13 @@ useClickOutside(mobileNav, () => {
             <div class="flex items-center">
                 <ul class="flex items-center px-[24px] py-[12px]">
                     <li class="text-[16px] leading-[19px] mr-[20px]">
-                        <RouterLink to="/">Home</RouterLink>
+                        <RouterLink to="/" @click="closeOnRoute">Home</RouterLink>
                     </li>
                     <li class="text-[16px] leading-[19px] mr-[20px]">
-                        <RouterLink to="/schedule">Schedules</RouterLink>
+                        <RouterLink to="/schedule" @click="closeOnRoute">Schedules</RouterLink>
                     </li>
                     <li class="text-[16px] leading-[19px]">
-                        <RouterLink to="/contact">Contact</RouterLink>
+                        <RouterLink to="/contact" @click="closeOnRoute">Contact</RouterLink>
                     </li>
                 </ul>
                 <div class="hidden md:block">

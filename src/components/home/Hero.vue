@@ -1,10 +1,11 @@
 <template>
-    <div class="hero px-4 sm:px-6 h-[calc(100dvh-64px)] relative flex items-center justify-center">
-        <div class="text-white px-[24px] flex flex-col items-center justify-center">
+    <div class="hero px-4 sm:px-6 h-[calc(100dvh-64px)] relative flex items-center justify-center bg-black/40">
+        <div class="text-white px-2 xs:px-[24px] flex flex-col items-center justify-center">
             <h1
-                class="text-[#fdb705] text-[52px] sm:text-[68px] md:text-[96px] leading-[48px] sm:leading-[62px] md:leading-[92px] font-semibold font-pp">
+                class="text-[#fdb705] text-[42px] xs:text-[52px] sm:text-[68px] md:text-[96px] leading-[48px] sm:leading-[62px] md:leading-[92px] font-semibold text-center">
                 Modest Fitness</h1>
-            <p class="long-text mt-[12px] text-[18px] sm:text-[30px] leading-[22px] sm:leading-[36px] text-white font-semibold uppercase">
+            <p
+                class="long-text mt-[12px] text-[18px] sm:text-[30px] leading-[22px] sm:leading-[36px] text-white font-semibold uppercase text-center">
                 Stronger and Healthier than ever </p>
         </div>
         <div id="hero-marquee"
@@ -50,17 +51,35 @@
 
 <style scoped>
 .hero {
-    background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');
+    position: relative;
+    /* background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     /* opacity: .69999998;
   mix-blend-mode: luminosity; */
     /* filter: brightness(40%); */
     /* backgroun */
 }
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+    /* Adjust the filter as needed */
+    z-index: -1;
+}
+
 .hero .long-text {
     text-shadow: 1px 1px 5px #000;
 }
+
 .marquee {
     display: flex;
     overflow: hidden;
@@ -109,6 +128,5 @@
     to {
         transform: translateX(calc(-100% - 12px));
     }
-}
-</style>
+}</style>
 
