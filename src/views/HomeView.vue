@@ -1,19 +1,13 @@
 <script setup>
 import Header from '@/components/navigations/Header.vue';
+import Hero from '@/components/home/Hero.vue';
 </script>
 
 <template>
   <main class="py-4 bg-black min-h-screen">
     <Header />
-    <div class="hero min-h-screen px-4 sm:px-6 ">
-      <div class="text-white pt-12 px-[24px]">
-        <h1
-          class="text-[52px] sm:text-[68px] md:text-[96px] leading-[48px] sm:leading-[62px] md:leading-[92px] font-semibold font-pp max-w-[540px]">
-          Modest Fitness</h1>
-        <p class="mt-[12px] text-[18px] sm:text-[24px] leading-[22px] sm:leading-[36px] max-w-[490px] text-of-dark/60">
-          Create unforgettable travel experiences all the way there and back, with ease. </p>
-      </div>
-    </div>
+    <Hero />
+    
     <div class="px-4 sm:px-6 "></div>
 
     <section class="bg-black lg:flex cursor-light">
@@ -31,7 +25,8 @@ import Header from '@/components/navigations/Header.vue';
                 viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29 1L26.14 3.786L41.3 19H1V23H41.3L26.14 38.146L29 41L49 21L29 1Z" fill="#E5E5DB"
                   stroke="#E5E5DB" stroke-width="0.6"></path>
-              </svg></button></form>
+              </svg></button>
+          </form>
         </div>
         <p class="mt-[20px] text-base leading-[21px] tracking-[0.01em] font-bold text-[#ad371d]">Please include an @ in
           the email address</p>
@@ -40,15 +35,3 @@ import Header from '@/components/navigations/Header.vue';
   </main>
 </template>
 
-
-<style scoped>
-.hero {
-  background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');
-  background-size: cover;
-  background-position: center;
-  /* opacity: .69999998;
-  mix-blend-mode: luminosity; */
-  /* filter: brightness(40%); */
-  /* backgroun */
-}
-</style>

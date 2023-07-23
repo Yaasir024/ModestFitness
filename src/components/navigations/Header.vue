@@ -13,7 +13,7 @@
                         <RouterLink to="/">Schedules</RouterLink>
                     </li>
                     <li class="text-[16px] leading-[19px]">
-                        <RouterLink to="/">Contact</RouterLink>
+                        <RouterLink to="/contact">Contact</RouterLink>
                     </li>
                 </ul>
                 <div class="hidden md:block">
