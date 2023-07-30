@@ -10,16 +10,17 @@
         </div>
         <div id="hero-marquee"
             class="absolute bottom-0 left-0 right-0 text-xl xs:text-[24px] leading-[26px] sm:leading-[31px] tracing-[0.02em] font-bold uppercase bg-gray-300 flex z-10">
-            <div class="py-[14px] px-[15px] sm:px-[24px] font-bold">NEWS</div>
+            <div class="py-[14px] px-[15px] sm:px-[24px] font-bold text-gray-300">NOTE</div>
             <div class="marquee w-full">
                 <div class="marquee__group">
-                    <span class="font-bold">Grand Opening Saturday July 29, 2023. Starts 7:00 AM</span>
+                    <span class="font-bold">ADDRESS: 20A kotangora Street Off Ibrahim Taiwo Road by Ajoke Model Nursery and Primary
+                        School, Ilorin, Kwara State</span>
                     <span class="mx-[12px]"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L0 0H12L18 6L12 12H0L6 6Z" fill="#000609" />
                         </svg>
                     </span>
-                    <span class="font-bold">20% Discount Off registration for first 10 members</span>
+                    <span class="font-bold">All our gym sessions are led by a certified female instructor</span>
                     <span class="mx-[12px]"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L0 0H12L18 6L12 12H0L6 6Z" fill="#000609" />
@@ -27,13 +28,14 @@
                     </span>
                 </div>
                 <div aria-hidden="true" class="marquee__group">
-                    <span class="font-bold">Grand Opening Saturday July 29, 2023. Starts 7:00 AM</span>
+                    <span class="font-bold">ADDRESS: 20A kotangora Street Off Ibrahim Taiwo Road by Ajoke Model Nursery and Primary
+                        School, Ilorin, Kwara State</span>
                     <span class="mx-[12px]"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L0 0H12L18 6L12 12H0L6 6Z" fill="#000609" />
                         </svg>
                     </span>
-                    <span class="font-bold">20% Discount Off registration for first 10 members</span>
+                    <span class="font-bold">All our gym sessions are led by a certified female instructor</span>
                     <span class="mx-[12px]"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L0 0H12L18 6L12 12H0L6 6Z" fill="#000609" />
@@ -128,5 +130,6 @@
     to {
         transform: translateX(calc(-100% - 12px));
     }
-}</style>
+}
+</style>
 
