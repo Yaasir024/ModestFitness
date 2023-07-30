@@ -15,38 +15,12 @@ const closeOnRoute = () => {
 </script>
 
 <template>
-    <div class="sticky top-0  px-4 sm:px-6 py-4 z-30 bg-black" v-if="false">
-        <header class="px-[24px] py-[12px] flex items-center justify-between bg-white rounded-[20px]">
-            <div class="logo">
-                <div class="text-[24px] font-bold text-orange-500">ModestFitness</div>
-            </div>
-            <div class="flex items-center">
-                <ul class="flex items-center px-[24px] py-[12px]">
-                    <li class="text-[16px] leading-[19px] mr-[20px]">
-                        <RouterLink to="/" @click="closeOnRoute">Home</RouterLink>
-                    </li>
-                    <li class="text-[16px] leading-[19px] mr-[20px]">
-                        <RouterLink to="/schedule" @click="closeOnRoute">Schedules</RouterLink>
-                    </li>
-                    <li class="text-[16px] leading-[19px]">
-                        <RouterLink to="/contact" @click="closeOnRoute">Contact</RouterLink>
-                    </li>
-                </ul>
-                <div class="hidden md:block">
-                    <RouterLink to="/">
-                        <button
-                            class="px-[12px] py-[10px] rounded-[40px] text-white text-[16px] leading-[19px] font-bold bg-orange-500">Register</button>
-                    </RouterLink>
-                </div>
-            </div>
-        </header>
-    </div>
     <header class="sticky top-0 bg-white px-6 z-30">
         <div class="flex items-center justify-between h-[64px]">
             <div class="logo">
                 <div class="text-[24px] font-bold text-main">ModestFitness</div>
             </div>
-            <div class="hidden md:flex items-center">
+            <div class="hidden md:flex items-center" v-if="false">
                 <ul class="flex items-center mr-[20px]">
                     <li class="text-[16px] leading-[19px] mr-[20px]">
                         <RouterLink to="/">Home</RouterLink>
@@ -59,13 +33,13 @@ const closeOnRoute = () => {
                     </li>
                 </ul>
             </div>
-            <div class="hidden md:block" v-if="false">
-                <RouterLink to="/">
+            <div class="" >
+                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeaZ99LG4Qaf9fK9EVNVsDMpIJS64q_zeUrSZkQ1mtRNN0Otw/viewform?usp=sf_link">
                     <button
                         class="px-[12px] py-[10px] rounded-[40px] text-white text-[16px] leading-[19px] font-bold bg-main">Register</button>
-                </RouterLink>
+                </a>
             </div>
-            <div class="block md:hidden relative" ref="mobileNav">
+            <div class="block md:hidden relative" ref="mobileNav" v-if="false">
                 <button class="flex items-center" @click="showMobileNav = !showMobileNav">
                     <svg height="24" width="24" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
                         stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -54,13 +54,7 @@
 <style scoped>
 .hero {
     position: relative;
-    /* background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center; */
-    /* opacity: .69999998;
-  mix-blend-mode: luminosity; */
-    /* filter: brightness(40%); */
-    /* backgroun */
+    /* background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');*/
 }
 
 .hero::before {
@@ -70,7 +64,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop');
+    background: url('./../../assets/images/hero.jpeg');
     background-size: cover;
     background-position: center;
     filter: brightness(80%);
